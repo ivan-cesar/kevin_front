@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+/*phone*/
+@media(min-width:390px) and (max-width:767px){
+  #imageId {
+    width: 128px!important;
+    height: 181px!important;
+    top: 39%!important;
+    left: 9%!important;
+}
+#buttonIdTwo{
+  left: 2%!important;
+  top: 63%!important;
+}
+#buttonId{
+  left: 2%!important;
+  top: 70%!important;
+}
+}
+/*tablette*/
+@media(min-width:768px) and (max-width:1439px){
+  #imageId {
+    width: 255px!important;
+    height: 361px!important;
+    top: 32%!important;
+    left: 8%!important;
+  }
+  #buttonIdTwo{
+    left: 2%!important;
+    top: 68%!important;
+  }
+  #buttonId{
+    left: 38%!important;
+    top: 68%!important;
+  }
+
+}
+/*laptop 1440px*/
+@media(min-width:1440px) and (max-width:1919px){
+  #imageId {
+    width: 340px!important;
+    height: 492px!important;
+    top: 22%!important;
+    left: 20%!important;
+}
+#buttonIdTwo{
+  left: 20%!important;
+  top: 81%!important;
+}
+#buttonId{
+  left: 40%!important;
+  top: 81%!important;
+}
+}
+/*grand ecran */
+@media(min-width:1920px) and (max-width:2559px){
+  #imageId {
+    width: 350px!important;
+    height: 492px!important;
+    top: 22%!important;
+    left: 27%!important;
+}
+#buttonIdTwo{
+  left: 26%!important;
+  top: 81%!important;
+}
+#buttonId{
+  left: 40%!important;
+  top: 81%!important;
+}
+}
+/*ecran mac kevin */
+@media(min-width:2560px){
+
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+
+}
+
+.background-custom-image{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+}
